@@ -1,0 +1,24 @@
+9:30 start
+
+11:00 coffee
+
+12:30 lunch
+
+3:00 tea
+
+4:30 end
+
+Python - still cracking language
+Java
+JavaScript aka ECMAScript or ES 
+A, Basic, C
+C, C++, C#, ObjectiveC aka Swift
+.NET
+PHP
+Go, Ruby/Rails.....
+
+
+
+
+
+
