@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        /* tag styles are automatically applied to ALL matching tags */
+        h1 {color:aqua; background-color:darkred;}
+        li {color:darkred;}
+        body {background-color:chocolate;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 title='and greetings to all our friends'>Welcome</h1>
+        <h2>oooooh</h2>
+    </header>
+    <!-- these days we tend to use 'semantic' tags -->
+    <nav>
+        <a href='https://bbc.co.uk/weather'>Weather</a> |
+        <a href='https://duckduckgo.com?q=weather'>Search</a> |
+        <a href='https://www.w3schools.com/html'>Notes</a>
+    </nav>
+    <!-- this is an HTML comment -->
+    
+    <p>HTML uses tags<br/> for marking up content</p>
+    <ul>
+        <li>Tags include paragraphs and lists</li>
+        <li>Almost all tags need a close</li>
+        <li>Very few tags are self-closing</li>
+    </ul>
+    <ol>
+        <li>HTML is the content</li>
+        <li>CSS is the style</li>
+        <li>JavaScript is for programming web pages</li>
+    </ol>
+    <hr/>
+    <section>
+        <form method="post" action='#'>
+            <!-- single or double quotes are fine -->
+            <input type="type" required name='firstname' placeholder='First Name' /><br/>
+            <input type='text' required name='lastname' placeholder='Last Name' /><br/>
+            <input type="color" required /><br/>
+            <input type="date" required/><br/>
+            <input type="range" value='18' min='0' max='120' step='1' required/><br/>
+            <input type="number" required/><br/>
+            <input type="password" minlength="12" required/><br/>
+            <input type="time" required/><br/>
+            <input type="url" required/><br/>
+            <input type="email" required/><br/>
+
+            <!-- we might choose to use legends -->
+            <fieldset>
+                <legend>My Details:</legend>
+                First name: <input type="text" name="firstname"><br />
+                Last name: <input type="text" name="lastname"><br />
+                <input type="submit" value="Submit">
+            </fieldset>
+
+            <!-- <input type='submit' value='Go'/> -->
+            <button>Go</button>
+        </form>
+    </section>
+    <hr/>
+    <!-- many tags allow attributes which modify the tag -->
+    <img src='https://placekitten.com/120/240' 
+        alt='a sweet ikle kitting' 
+        title='warning: dangerous'/>
+    <section>
+        <table border="1">
+            <!-- tr is a table row -->
+            <tr> 
+                <!-- th is a table header cell -->
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <!-- td is a table data cell -->
+                <td>John</td>
+                <td>Smith</td>
+                <td>55</td>
+            </tr>
+            <tr>
+                <td>Denise</td>
+                <td>Byrne</td>
+                <td>52</td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <!-- there are loads of html 'entity' values -->
+        &copy;2021 read our legal notice
+    </footer>
+</body>
+</html>
