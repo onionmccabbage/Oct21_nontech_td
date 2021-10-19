@@ -1,0 +1,21 @@
+/* tag styles are automatically applied to ALL matching tags */
+header {color:aqua; background-color:darkred;}
+h1 {color:green; text-align: center;}
+li {color:darkred;}
+body {background-color:chocolate;}
+form {border: solid 1px blue; width: 50%;}
+
+/* class style - manually apply anywhere you like */
+.highlight {background-color:yellow;}
+.legal {font-family:'Courier New', Courier, monospace; 
+        color:antiquewhite; 
+        background-color:black;}
+
+/* ID styles are unique and applied manually */
+#firstname {background-color: sandybrown;}
+
+/* we can combine styles together */
+ol li {color:chartreuse;}
+
+/* the following is not a great idea.... */
+/* * body article section table tr td .wibble {color:chartreuse;} */

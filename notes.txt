@@ -4,6 +4,23 @@
 3:00 tea
 4:30 end
 
+https://drive.google.com/file/d/1Enp2NNLr9ynccdBR6DMVtwWPb_VlcyJI/view?usp=sharing
+
+- tdd
+- VM or Docker
+> return to 03 data
+- show sepal data
+
+- ctrl-D to quit an ssh session
+
+- cloud security issues:
+ - still crashes!!! (resilient)
+ - required internet acccess
+ - data centres natural disasters
+ - can be costly (can be cheaper)
+ - s-l-o-w-e-r
+ - whose legal jurisdiction 
+
 Python - still a cracking language
 Java
 JavaScript (aka ECMAScript or ES) 
@@ -13,6 +30,29 @@ C, C++, C#, also ObjectiveC (aka Swift)
 PHP
 Go, Ruby/Rails.....
 Kotlin, Scala
+
+Tuesday
+-------
+- make sure NodeJS is installed
+- what about the other install requirements?
+- all about web
+- we will be using a web server
+- we will be building web pages
+q - what if we style 'header' rather than 'h1'
+
+Wednesday
+---------
+- explore AJAX using JavaScript
+- explore SPA where the form has NOOOOOO Action
+
+
+
+
+
+
+
+
+		15/09/72
 
 
 
