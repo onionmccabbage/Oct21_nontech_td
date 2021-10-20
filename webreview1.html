@@ -15,31 +15,34 @@
             <button id='btnGo'>Go</button>
         </section>
         <section>
-            <pre id='feedback'>Watch here...</pre>
+            <aside id='feedback'>Watch here...</aside>
         </section>
         <footer></footer>
     </article>
     <script>
-        target = Math.floor(Math.random()*100)
-        message = ''
-        count = 0
+        // global variables
+        let target = Math.floor(Math.random()*100)
+        let message = ''
+        let count = 0
         const checkValue = (v)=>{
             // first let's check if they need a clue
             let isOdd = target%2 != 0   
             let root = Math.sqrt(target)
             let isSquare = parseInt(Number(target)) == root 
             if (v == -1){
-                message += `Clue: odd number ${isOdd} square number ${isSquare}\n`
-                feedback.innerHTML = message
+                message += `Clue: odd number ${isOdd} square number ${isSquare}<br/>`
             }
             // now we can check if they have guessed the answer
             else if (v == target){
                 message  += `Correct it is ${target} you took ${count} goes`
-
+                // we can re-set the game
+                target = Math.floor(Math.random()*100)
+                guess.value = ''
+                count = 0
             } else if (v < target){
-                message  += `${v} is too Low\n`
+                message  += `${v} is too Low<br/>`
             } else if (v > target){
-                message  += `${v} is too High\n`
+                message  += `${v} is too High<br/>`
             }
             feedback.innerHTML = message
         }
