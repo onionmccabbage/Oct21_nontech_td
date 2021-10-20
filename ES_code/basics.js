@@ -44,6 +44,12 @@ const MAX_CONNECTIONS = 6
 // MAX_AGE = 12 // fails - cannot mutate a const - const is immutable
 
 // exploring strings
-pass = 'let me in "please"' // we can use quotes in quotes like this
-p = 'let me in \'please\'' // we can encode using \'
+let pass = 'let me in "please"' // we can use quotes in quotes like this
+let p = 'let me in \'please\'' // we can encode using \'
 p  ='this line contains \t a tab \n and a new line'
+console.log(p)
+
+console.log(p.length)
+console.log(p.indexOf('contains')) // I think it will be 10 (counts from zero)
+console.log(p.substring(2,6)) // start at 2, stop before 6
+console.log( pass.toUpperCase() )
