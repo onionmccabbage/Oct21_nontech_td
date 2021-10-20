@@ -12,9 +12,25 @@
         <nav></nav>
         <section>
             <input id='pwd' placeholder="Enter your password"/>
+            <!-- onclick='handleButton()' -->
             <button id='btnGo'>Go</button>
         </section>
         <footer></footer>
     </article>
+    <script>
+        // this is the place to write our ECMAScript
+        // we need an event-call back listener function
+        const handleButton = ()=>{
+            alert('Please don\'t click the button again')
+            btnGo.removeEventListener('click', handleButton)
+        }
+        btnGo.addEventListener('click', handleButton)
+        // we need to wait for the page-load event
+        // const doThisWhenStuffHasLoaded = ()=>{
+        //     // we also need to wire-up our event listeners
+        //     btnGo.addEventListener('click', handleButton)
+        // }
+        // document.addEventListener('DOMContentLoaded', doThisWhenStuffHasLoaded, false);
+    </script>
 </body>
 </html>
