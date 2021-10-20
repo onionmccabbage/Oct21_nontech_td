@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JavaScript with Web Pages</title>
+</head>
+<body>
+    <article>
+        <header></header>
+        <nav></nav>
+        <section>
+            <input id='guess' placeholder="Enter your guess"/>
+            <button id='btnGo'>Go</button>
+        </section>
+        <section>
+            <pre id='feedback'>Watch here...</pre>
+        </section>
+        <footer></footer>
+    </article>
+    <script>
+        target = Math.floor(Math.random()*100)
+        message = ''
+        count = 0
+        const checkValue = (v)=>{
+            // first let's check if they need a clue
+            let isOdd = target%2 != 0   
+            let root = Math.sqrt(target)
+            let isSquare = parseInt(Number(target)) == root 
+            if (v == -1){
+                message += `Clue: odd number ${isOdd} square number ${isSquare}\n`
+                feedback.innerHTML = message
+            }
+            // now we can check if they have guessed the answer
+            else if (v == target){
+                message  += `Correct it is ${target} you took ${count} goes`
+
+            } else if (v < target){
+                message  += `${v} is too Low\n`
+            } else if (v > target){
+                message  += `${v} is too High\n`
+            }
+            feedback.innerHTML = message
+        }
+        const handleBtn = ()=>{
+            count ++
+            let attempt = guess.value
+            checkValue(attempt)
+        }
+        btnGo.addEventListener('click', handleBtn)
+    </script>
+</body>
+</html>
