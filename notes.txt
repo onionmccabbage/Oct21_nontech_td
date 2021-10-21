@@ -40,19 +40,34 @@ Tuesday
 - we will be building web pages
 q - what if we style 'header' rather than 'h1'
 
+
+What does 'Agile' mean?
+ - framework for continuous dev rather than linear
+ - working to produce small deliverable pieces of code at end of sprint
+ - a sprint is a defined period of time agree goals
+ - terms used in 'Agile':
+  - backlogs: product and sprint
+  - scrum master makes sure on-task and help resolve - a SUPPORTING role
+ - scope creep - taking on far too much
+
 Wednesday
 ---------
-- explore AJAX using JavaScript
-- explore SPA where the form has NOOOOOO Action
+> Bootstrap 'Jumbotron'
+> explore AJAX using JavaScript
+> explore SPA where the form has NOOOOOO Action
+- revisit Git
+- revisit using databases .....
 
+Thursday
+--------
+- Objects and Classes
+- Arrays
+- plenty of hands-on
+- after lunch exercise
+- browser cache
+- get the this. object stuff working
 
-
-
-
-
-
-
-		15/09/72
+https://github.com/onionmccabbage/Oct21_nontech_td
 
 
 
