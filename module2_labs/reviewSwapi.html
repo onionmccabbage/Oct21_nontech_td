@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Data from external APIs</title>
+</head>
+<body>
+    <article>
+        <section>
+            <!-- this form is in a SPA so it mus NOT do the default thing -->
+            <form>
+                <input id='idNumber' placeholder="enter a number" 
+                required value="1" min="1" max="8" type='number'
+                /><br/>
+                <input id='category' placeholder="enter a category" required value="people"/><br/>
+                <button id='btnGetData'>Get Data</button>
+            </form>
+        </section>
+        <section>
+            <h3 id='txtName'></h3>
+            <ul>
+                <li id='detail_1'></li>
+                <li id='detail_2'></li>
+                <li id='detail_3'></li>
+            </ul>
+        </section>
+    </article>
+    <script src='ES_code/switem.js'></script>
+    <script src='ES_code/service.js'></script>
+    <script src='ES_code/s2.js'></script>
+</body>
+</html>

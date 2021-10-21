@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using JavaScript with Web Pages</title>
+</head>
+<body>
+    <article>
+        <header></header>
+        <nav></nav>
+        <section>
+            <input id='pwd' value='secret' placeholder="Enter your password"/>
+            <!-- onclick='handleButton()' -->
+            <button id='btnGo'>Go</button>
+        </section>
+        <section>
+            <!-- we can write to the DOM like this -->
+            <aside id='feedback'>watch this space...</aside>
+        </section>
+        <footer></footer>
+    </article>
+    <script>
+        // this is the place to write our ECMAScript
+        let count = 0
+        // we need an event-call back listener function
+        const handleButton = ()=>{
+            count++ // increment count by one
+            // consider carefull when using alert - users dont like them
+            // alert('Please don\'t click the button again')
+            // btnGo.removeEventListener('click', handleButton)
+            // grab whatever is in the form field
+            let pass = pwd.value
+            // construct a tidy string for the user
+            let response = `Button clicked ${count} times. Password is ${pass}`
+            if (pass == 'Neo'){
+                alert('weve been expecting you')
+            }
+            // we can generate a tidy string to tell the user whats going on
+            // feedback.innerHTML = 'the button has been clicked ' + count + ' times'
+            // we can use back-tick syntax which is more efficient
+            feedback.innerHTML = response //`the button has been clicked ${count} times `
+        }
+        btnGo.addEventListener('click', handleButton)
+        // we need to wait for the page-load event
+        // const doThisWhenStuffHasLoaded = ()=>{
+        //     // we also need to wire-up our event listeners
+        //     btnGo.addEventListener('click', handleButton)
+        // }
+        // document.addEventListener('DOMContentLoaded', doThisWhenStuffHasLoaded, false);
+    </script>
+</body>
+</html>

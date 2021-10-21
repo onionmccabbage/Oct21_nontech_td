@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating the HTML Document Object Model</title>
+</head>
+<body>
+    <article>
+        <section>
+            <h1>We can access DOM members</h1>
+            <p>by id</p>
+            <p>by tag name</p>
+            <p>by name</p>
+        </section>
+        <section>
+            <!-- it is recomended to use ID rather than name -->
+            <form name='my_form'>
+                <input name='level' value='catch me if you can'/>
+            </form>
+        </section>
+    </article>  
+    <script>
+        // we can access DOM elements
+        // by tag name
+        dom_arr = document.getElementsByTagName('p')
+        console.log(dom_arr[2])
+        // by name
+        l = document.my_form.level.value
+        console.log(l)
+    </script>
+</body>
+</html>
