@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical DOM Manipulation</title>
+    <style>
+        /* a class to prevent an element from being displayed */
+        .hideme {display: none;}
+    </style>
+</head>
+<body>
+    <article>
+        <section>
+            <aside id='agreeCookies'>
+                <p>Are you ok with cookies on this site?</p>
+                <button id='btnAgree'>Yes</button>
+            </aside>
+        </section>
+        <section>
+            <aside>
+                <input id='w' placeholder="width" type='range' 
+                    min="32" max="640" step="12" /><span id='w_val'></span><br/>
+                <input id='h' placeholder="height" type='range' 
+                    min="32" max="640" step="12"/><span id='h_val'></span><br/>
+                <button id='btnGo'>Get Image</button>
+            </aside>
+            <aside>
+                <img id='pic' />
+            </aside>
+        </section>
+    </article>
+    <script>
+        // how to show the value of 'range' sliders...
+        const showWidth = ()=>{
+            document.getElementById('w_val').innerHTML = w.value
+            document.getElementById('h_val').innerHTML = h.value
+        }
+        // get hold of the slider by its ID
+        let w = document.getElementById('w')
+        let h = document.getElementById('h')
+        // add an event listener
+        w.addEventListener('change', showWidth)
+        h.addEventListener('change', showWidth)
+
+
+
+        // a call-back event listener function for the image button
+        const fnGetImage = ()=>{
+            // read what the user entered for w and h
+            let w = document.getElementById('w').value
+            let h = document.getElementById('h').value
+            // now build a string to represent the image URL
+            let url = `https://placekitten.com/${w}/${h}`
+            // set this url as the source of an image
+            let picture = document.getElementById('pic')
+            picture.setAttribute('src', url)
+        }
+        // add the event lsitener to the button
+        document.getElementById('btnGo').addEventListener('click', fnGetImage)
+
+
+
+
+        // has the user agreed to cookies
+        let agree = false
+        // call back event listener function
+        const fnAgree = ()=>{
+            // first, remove the event listener from the button
+            document.querySelector('#btnAgree').removeEventListener('click', fnAgree)
+            // then hide the cookie agree aside tag
+            document.querySelector('#agreeCookies').setAttribute('class', 'hideme')
+        }
+        // the button needs a click handler
+        document.querySelector('#btnAgree').addEventListener('click', fnAgree)
+    </script>
+</body>
+</html>

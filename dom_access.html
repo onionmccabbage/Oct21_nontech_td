@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating the HTML Document Object Model</title>
+    <!-- usually css is declared in an external css file -->
+    <style>
+        /* class style (always begin with a dot) */
+        .emphasis {font-weight: 900;}
+    </style>
+</head>
+<body>
+    <article>
+        <section class='main'>
+            <h1>We can access DOM members</h1>
+            <p>by id</p>
+            <p class='emphasis'>by tag name</p>
+            <p>by name</p>
+        </section>
+        <section>
+            <!-- it is recomended to use ID rather than name -->
+            <form name='my_form'>
+                <input name='level' value='catch me if you can'/>
+            </form>
+        </section>
+    </article>  
+    <script>
+        // we can access DOM elements
+        // by tag name
+        dom_arr = document.getElementsByTagName('p') // returns an array of zero or more members
+        console.log(dom_arr[2])
+        // by name
+        l = document.my_form.level.value
+        l
+        console.log(l)
+        // by CSS selector
+        q = document.querySelector('.main')
+        console.log(q)
+        // we can alter any attribute of HTML such as the css
+        // first, get hold of the node element as above
+        // then access an attribute 
+        dom_arr[2].setAttribute('class', 'emphasis')
+    </script>
+</body>
+</html>

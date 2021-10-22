@@ -67,6 +67,22 @@ Thursday
 - browser cache
 - get the this. object stuff working
 
+Friday
+-------
+- find elements by css
+- NodeJS
+- testing
+- web servers
+- CORS...
+- DB
+- bring the web technologies together
+- after lunch exercise: choose
+  - get Apache working in virtual Machine (Vagrant)
+  - work with Jasmine to write and run tests
+  - set up local GitHub repo and use it with VS Code
+  - a final web tech project
+- at the end - feedback!
+
 https://github.com/onionmccabbage/Oct21_nontech_td
 
 

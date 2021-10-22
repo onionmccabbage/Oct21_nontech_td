@@ -17,7 +17,7 @@ const getData = (_id, _cat) => {
         .then(data => {
             console.log(data)
             txtName.innerHTML = data.name
-            monitor.innerHTML = data
+            // monitor.innerHTML = data
             // append each new item to our array
             // items.push(data)
             // console.log(items)
