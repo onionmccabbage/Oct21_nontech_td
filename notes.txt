@@ -6,14 +6,12 @@
 
 https://drive.google.com/file/d/1Enp2NNLr9ynccdBR6DMVtwWPb_VlcyJI/view?usp=sharing
 
-- tdd
+> tdd
 - VM or Docker
 > return to 03 data
-- show sepal data
-
 - ctrl-D to quit an ssh session
 
-- cloud security issues:
+> cloud security issues:
  - still crashes!!! (resilient)
  - required internet acccess
  - data centres natural disasters
@@ -33,12 +31,12 @@ Kotlin, Scala
 
 Tuesday
 -------
-- make sure NodeJS is installed
-- what about the other install requirements?
-- all about web
-- we will be using a web server
-- we will be building web pages
-q - what if we style 'header' rather than 'h1'
+> make sure NodeJS is installed
+> what about the other install requirements?
+> all about web
+> we will be using a web server
+> we will be building web pages
+q > what if we style 'header' rather than 'h1'
 
 
 What does 'Agile' mean?
@@ -69,19 +67,39 @@ Thursday
 
 Friday
 -------
-- find elements by css
-- NodeJS
-- testing
-- web servers
-- CORS...
-- DB
-- bring the web technologies together
+> find elements by css
+> NodeJS
+- show sepal data
+> testing
+  npm install @angular/cli -g
+  ...
+  ng new proj
+  ...
+  cd proj
+  we now have a project including Jasmine tests
+> web servers
+> CORS...
+- DB - demo after lunch
+> bring the web technologies together
 - after lunch exercise: choose
-  - get Apache working in virtual Machine (Vagrant)
+  - Get Apache working in virtual Machine (Vagrant)
+    - follow the steps in the first PDF page 183 onwards
   - work with Jasmine to write and run tests
+    - follow online Jasmine tutorial e.g.
+	https://www.tutorialspoint.com/jasminejs/jasminejs_matchers.htm
+	https://riptutorial.com/jasmine
+	https://jasmine.github.io/tutorials/your_first_suite
   - set up local GitHub repo and use it with VS Code
+    - follow steps in Lab 6 (steps 9/10 may not work)
+    - find out how to configure VSCode to work with Git
   - a final web tech project
-- at the end - feedback!
+    - Weather Project (see Web Review 3 document)
+    - what about errors or 404
+http://api.openweathermap.org/data/2.5/weather?q=london,uk&units=metric&APPID=48f2d5e18b0d2bc50519b58cce6409f1
+  - try any of the labs 1-9 in the repo
+
+- at the end - feedback
+  https://frameworktraining.typeform.com/to/rh3yrCXc
 
 https://github.com/onionmccabbage/Oct21_nontech_td
 
